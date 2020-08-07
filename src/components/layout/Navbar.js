@@ -12,19 +12,17 @@ const Navbar = (props) => {
         <div>
             <nav className="nav-wrapper indigo darken-3">
                 <div className="container">
-                    <Link to="/" className="brand-logo">Project Management Planner</Link>
-                    <a href="#" className="sidenav-trigger" data-target="mobile-links">
-                        <i className="material-icons">menu</i>
-                    </a>
-                    <div className="right hide-on-med-and-down">
-                        { links }
+                    <div className="row">
+                        <div className="col l6 m6 s12">
+                            <a href="/"><h5><b>Project Planner</b></h5></a>
+                        </div>
+                        <div className="col l6 m6 s12">
+                            { links }
+                        </div>
                     </div>
 
                 </div>
             </nav>
-            <ul className="sidenav" id="mobile-links">
-                { links } 
-            </ul>
         </div>
 
     )
